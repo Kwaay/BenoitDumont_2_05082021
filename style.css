@@ -1,0 +1,80 @@
+body {
+    font-family: Raleway, sans-serif;
+}
+
+
+
+
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  
+  a:visited {
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  
+  a:focus {
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  
+  a:active {
+    color: auto;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+/* ----------------------------------------- */
+
+.header {
+    align-items: center;
+    margin: 0 auto;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-container img {
+    width: 100px;
+    height: auto;
+    padding: 2vh;
+}
+.buttons {
+    padding: 2vh;
+}
+.button-hebergement {
+    display: inline-flex;
+    padding: 0.5vh;
+    margin: 0.8vh;
+}
+.button-hebergement a {
+    color: #0065FC;
+    font-size: large;
+}
+.button-activites {
+    display: inline-flex;
+    color: black;
+    padding: 0.5vh;
+    margin: 0.8vh;
+}
+.button-activites a {
+    color: black;
+    font-size: large;
+}
+.button-inscrire {
+    display: inline-flex;
+    padding: 0.5vh;
+    margin: 0.8vh;
+}
+.button-inscrire a {
+    font-weight: bolder;
+    color: #0065FC;
+    font-size: large;
+}

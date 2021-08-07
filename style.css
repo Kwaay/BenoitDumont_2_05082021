@@ -64,7 +64,8 @@ a:link {
     padding-right: 6vh;
 }
 .button-hebergement:hover a {
-    border-top: 1px solid #0065FC; ;
+    border-top: 1px solid #0065FC;
+    font-weight: 500;
     color: #0065FC;
 }
 .button-activites {
@@ -83,9 +84,11 @@ a:link {
     font-size: 1.33em;
     color: #0065FC;
     font-size: large;
-    padding-right: 10vh;
+    padding-right: 6vh;
     padding-left: 5vh;
 }
+/* ----------------------------------------- */
+
 .search-container h2 {
     margin-left: 2vh;
 }
@@ -95,7 +98,7 @@ a:link {
 .information i {
     padding: 1vh;
     border: 1px solid #DEEBFF;
-    border-radius: 30px;
+    border-radius: 40px;
     color: #0065FC;
     margin-right: 2vh;
 }
@@ -144,25 +147,30 @@ a:link {
     border: 1px solid #DEEBFF;
     border-radius: 30px;
     font-weight: bold;
-    padding-right: 4vh;
+    padding-right: 2vh;
     font-size: large;
 
 }
 .filters i {
     background-color: #DEEBFF;
     border-radius: 30px;
-    padding: 2vh;
+    padding: 1vh;
     color: #0065FC;
     margin-right: 2vh;
 }
 
 
 /* ------------------------------------*/
-#hebergement {
+#hebergement-all {
+    display: flex;
+    justify-content: space-between;
+}
+#hebergement { 
     max-width: 886px;
     width: fit-content;
     height: fit-content;
     margin-left: 2vh;
+    display: inline-grid; 
 }
 .hebergement-container {
     padding-top: 20px;
@@ -179,12 +187,12 @@ a:link {
     padding-top: 3vh;
     font-weight: bold;
 }
-.card-container {
+.card-hebergement-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.card-container img {
+.card-hebergement-container img {
     width: 245px;
     height: 125px;
     object-fit: cover;
@@ -192,44 +200,94 @@ a:link {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-.card-container i {
+.card-hebergement-container i {
     color: #0065FC;
 }
-.card-infos h3,.card-infos p {
+.card-hebergement-infos h3, .card-hebergement-infos p {
     font-size: medium;
     margin: 5px;
 }
-.card-infos i {
+.card-hebergement-infos i {
     font-size: small;
+    margin-bottom: 8px;
 }
-.card-1 {
+.card-hebergement-1, .card-hebergement-2, .card-hebergement-3, .card-hebergement-4, .card-hebergement-5, .card-hebergement-6 {
     background-color: white;
     border-radius: 30px;
-    padding: 1vh;
-}
-.card-2 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 1vh;
-}
-.card-3 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 1vh;
-}
-.card-4 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 1vh;
-}
-.card-5 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 1vh;
-}
-.card-6 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 1vh;
+    padding: 3px;
 }
 
+/* ------------------------------------*/
+#populaire {
+    margin-right: 2vh;
+    width: fit-content;
+}
+.populaire-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.populaire-container img {
+    width: 140px;
+    height: 140px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.populaire-container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.card-populaire-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-populaire-1 {
+    display: flex;
+    max-width: 345px;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card-populaire-2 {
+    display: flex;
+    max-width: 345px;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card-populaire-3 {
+    display: flex;
+    max-width: 345px;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card-populaire-3 img {
+    width: 172px;
+}
+.card-populaires-infos {
+    padding-left: 10px;
+}
+.card-populaires-infos i {
+    color: #0065FC;
+    font-size: small;
+}

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <title>Reservia</title>
+        <title>Test</title>
         <link href="style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,15 +15,9 @@
             <div class="header-container">
                 <img src="images/reservia-logo.png" alt="Logo Reservia">
                 <div class="buttons">
-                    <div class="button-hebergement">
-                        <a href="#" class="link-button">Hébergements</a>
-                    </div>
-                    <div class="button-activites">
-                        <a href="#" class="link-button">Activités</a>
-                    </div>
-                    <div class="button-inscrire">
-                        <a href="#" class="link-button">S'inscrire</a>
-                    </div>
+                    <a href="#hebergement-all" class="primary-link active">Hébergements</a>
+                    <a href="#activites" class="primary-link">Activités</a>
+                    <a href="#" class="secondary-link">S'inscrire</a>
                 </div>
             </div>
         </div>
@@ -34,18 +28,19 @@
                 <div class="search-bar">
                     <form method="POST">
                         <div class="form-search">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt geo"></i>
                             <input type="search" name="nom" id="nom" placeholder="Marseille, France" size="1">
-                            <a href="#" class="link-button">Rechercher</a>
+                            <a href="#" class="search-desktop"">Rechercher</a>
+                            <a href="#" class="search-mobile"><i class="fas fa-search search-icon"></i></a>
                         </div>
                     </form>
                 </div>
                 <div class="filters">
                     <h3>Filtres</h3>
-                        <p><i class="fas fa-money-bill-wave"></i>Economique</p>
-                        <p><i class="fas fa-child"></i>Familial</p>
-                        <p><i class="fas fa-heart"></i>Romantique</p>
-                        <p><i class="fas fa-dog"></i>Animaux autorisés</p>
+                    <p><i class="fas fa-money-bill-wave"></i>Economique</p>
+                    <p><i class="fas fa-child"></i>Familial</p>
+                    <p><i class="fas fa-heart"></i>Romantique</p>
+                    <p><i class="fas fa-dog"></i>Animaux autorisés</p>
                 </div>
                 <div class="information">
                     <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>    
@@ -104,7 +99,7 @@
                             <img src="images/hebergements/hotel_de_la_mer.jpg" alt="Image de l'Hôtel de la Mer">
                             <div class="card-hebergement-infos">
                                 <h3>Hôtel de la Mer</h3>
-                                <p>Nuit à partir de 46€<
+                                <p>Nuit à partir de 46€
                                 <br />
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -149,7 +144,7 @@
             <section id="populaire">
                 <div class="populaire-container">
                     <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-                    <div class="card-populaires-container">
+                    <div class="card-populaire-container">
                         <div class="card-populaire-1">
                             <img src="images/hebergements/hotel_le_soleil_du_matin.jpg" alt=" Image de l'Hôtel du Matin">
                             <div class="card-populaires-infos">
@@ -196,54 +191,45 @@
                 </div>
             </section>
         </section>
-        
         <section id="activites">
             <div class="activites">
                 <div class="activites-container">
                     <h3>Activités à Marseille</h3>
                     <div class="card-activites-container">
-                        <div class="column-1">
-                            <div class="card-activites-1">
-                                <img src="images/activites/vieux_port.jpg" alt="Image du Vieux Port">
-                                <div class="card-activites-infos">
-                                    <p><b>Vieux Port</b></p>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="column-2">
-                            <div class="card-activites-2">
-                                <img src="images/activites/fort_de_pomegues.jpg" alt="Image du Fort de Pomegues">
-                                <div class="card-activites-infos">
-                                    <p><b>Port de Pomègues</b></p>
-                                </div>
+                        <div class="card-activites-1">
+                            <img src="images/activites/vieux_port.jpg" alt="Image du Vieux Port">
+                            <div class="card-activites-infos">
+                                <p><b>Vieux Port</b></p>
                             </div>
-                            <div class="card-activites-3">
-                                <img src="images/activites/iles_du_frioul.jpg" alt="Image des îles du Friboul">
-                                <div class="card-activites-infos">
-                                    <p><b>Iles du Friboul</b></p>
-                                </div>
+                        </div>    
+                        <div class="card-activites-2">
+                            <img src="images/activites/fort_de_pomegues.jpg" alt="Image du Fort de Pomegues">
+                            <div class="card-activites-infos">
+                                <p><b>Port de Pomègues</b></p>
                             </div>
                         </div>
-                        <div class="column-3">
-                            <div class="card-activites-4">
-                                <img src="images/activites/parc_national_des_calanques.jpg" alt="Image du Parc National des Calanques">
-                                <div class="card-activites-infos">
-                                    <p><b>Parc National des Calanques</b></p>
-                                </div>
+                        <div class="card-activites-3">
+                            <img src="images/activites/iles_du_frioul.jpg" alt="Image des îles du Friboul">
+                            <div class="card-activites-infos">
+                                <p><b>Iles du Friboul</b></p>
                             </div>
                         </div>
-                        <div class="column-4">
-                            <div class="card-activites-5">
-                                <img src="images/activites/notre_dame_de_la_garde.jpg" alt="Image de Notre Dame de la Garde">
-                                <div class="card-activites-infos">
-                                    <p><b>Notre Dame de la Garde</b></p>
-                                </div>
+                        <div class="card-activites-4">
+                            <img src="images/activites/parc_national_des_calanques.jpg" alt="Image du Parc National des Calanques">
+                            <div class="card-activites-infos">
+                                <p><b>Parc National des Calanques</b></p>
                             </div>
-                            <div class="card-activites-6">
-                                <img src="images/activites/parc_longchamp.jpg" alt="Image du Parc Longchamp">
-                                <div class="card-activites-infos">
-                                    <p><b>Parc Longchamp</b></p>
-                                </div>
+                        </div>
+                        <div class="card-activites-5">
+                            <img src="images/activites/notre_dame_de_la_garde.jpg" alt="Image de Notre Dame de la Garde">
+                            <div class="card-activites-infos">
+                                <p><b>Notre Dame de la Garde</b></p>
+                            </div>
+                        </div>
+                        <div class="card-activites-6">
+                            <img src="images/activites/parc_longchamp.jpg" alt="Image du Parc Longchamp">
+                            <div class="card-activites-infos">
+                                <p><b>Parc Longchamp</b></p>
                             </div>
                         </div>
                     </div>    

@@ -62,12 +62,11 @@ a:link {
 }
 .active:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 48px;
     color: #0065FC;
 }
 .secondary-link {
     font-weight: bold;
-    color: #0065FC;
+    color: #0065FC!important;
 }
 
 /* Position pour le bouton "S'inscrire" top = distance entre le haut et le bouton et right = distance du mur droit */
@@ -143,6 +142,12 @@ a:link {
     margin-left: 2vh;
     width: 100%;
     flex-wrap: wrap;
+}
+.filters p:hover {
+    border: 1px solid #0065FC;
+    border-radius: 30px;
+    transition: all 450ms;
+    transform: scale(1.05);
 }
 .filters p {
     border: 1px solid #DEEBFF;
@@ -221,12 +226,7 @@ a:link {
     padding: 3px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-hebergement-1:hover, .card-hebergement-2:hover, .card-hebergement-3:hover, .card-hebergement-4:hover, .card-hebergement-5:hover, .card-hebergement-6:hover {
-border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
+
 /* ------------------------------------*/
 #populaire {
     margin-right: 2vh;
@@ -276,12 +276,6 @@ border: 1px solid #0065FC;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-populaire-1:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
 .card-populaire-2 {
     display: flex;
     background-color: white;
@@ -292,12 +286,7 @@ border: 1px solid #0065FC;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-populaire-2:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
+
 .card-populaire-3 {
     display: flex;
     background-color: white;
@@ -308,12 +297,7 @@ border: 1px solid #0065FC;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-populaire-3:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
+
 .card-populaire-3 img {
     width: 140px;
 }
@@ -378,12 +362,6 @@ border: 1px solid #0065FC;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-activites-1:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
 
 .card-activites-2 img {
     width: 100%;
@@ -392,12 +370,6 @@ border: 1px solid #0065FC;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
-}
-.card-activites-2:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
 }
 
 .card-activites-3 img {
@@ -408,12 +380,6 @@ border: 1px solid #0065FC;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-activites-3:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
 
 .card-activites-4 img {
     width: 100%;
@@ -422,12 +388,6 @@ border: 1px solid #0065FC;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
-}
-.card-activites-4:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
 }
 
 .card-activites-5 img {
@@ -438,13 +398,6 @@ border: 1px solid #0065FC;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
 }
-.card-activites-5:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
-}
-
 .card-activites-6 img {
     width: 100%;
     height: calc(100% - 70px);
@@ -452,12 +405,6 @@ border: 1px solid #0065FC;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
-}
-.card-activites-6:hover {
-    border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
-    transform: scale(1.05);
 }
 
 .card-activites-infos {
@@ -518,14 +465,12 @@ border: 1px solid #0065FC;
         padding-left: 4vh;
     }
     .primary-link {
-        width: 100%;
+        width: 50%;
         text-align: center;
-        padding-right: 79px;
-        padding-left: 79px;
         border-bottom: 2px solid #DEEBFF;
         margin-right: 0;
         padding-bottom: 20px;
-        margin-left: -5px;
+        display: inline-block;
     }
     .active:hover {
         border-bottom: 2px solid #0065FC;
@@ -540,7 +485,6 @@ border: 1px solid #0065FC;
     }
     .buttons {
         padding-top: 0;
-        text-align: center;
     }
     #search {
         padding-top: 40px;
@@ -602,7 +546,7 @@ border: 1px solid #0065FC;
     }
     
     .card-hebergement-container img {
-        height: 100px;
+        height: 110px;
         width: 350px;
     }
 
@@ -704,7 +648,7 @@ border: 1px solid #0065FC;
     .card-activites-container {
         display: grid;
         gap: 40px;
-        grid-template-columns: 340px;
+        grid-template-columns: 1fr;
         grid-template-rows: 190px 190px 190px 190px 190px 190px;
         justify-content: center;
     }
@@ -731,5 +675,68 @@ border: 1px solid #0065FC;
     .card-activites-6 {
         grid-column: 1/2;
         grid-row: 6/7;
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 500px) {
+
+}
+@media screen and (min-width: 280px) and (max-width: 450px) {
+    .form-search {
+        margin-left: 0;
+    }
+    #search {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .card-populaire-1 {
+        width: fit-content;
+        max-width: 330px;
+    }
+    .card-populaire-2 {
+        width:initial;
+        max-width: 330px;
+    }
+    .card-populaire-3 {
+        width: fit-content;
+        max-width: 330px;
+    }
+    .card-populaires-infos {
+        padding-right: 20px;
+    }
+    .card-populaires-infos i {
+        padding-left: 0;
+    }
+    .card-hebergement-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #activites {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .header-container img {
+        padding-left: 2vh;
+    }
+    .card-hebergement-container img {
+        width: 100%;
+    }
+    .card-populaire-container img {
+        height: auto;
+    }
+    .search-container p {
+        margin-left: 2vh;
+    }
+    .filters {
+        margin-left: 0;
+        width: 100%;
+    }
+    .filters i {
+        margin-right: 5px;
+    }
+    .form-search input {
+        width: auto;
+        min-width: 100px;
     }
 }

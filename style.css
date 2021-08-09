@@ -34,7 +34,7 @@ a:link {
 
 /* ----------------------------------------- */
 
-.header {
+header {
     align-items: center;
     margin: 0 auto;
     max-width: 1440px;
@@ -417,7 +417,7 @@ a:link {
 }
 
 /* ------------------------------------*/
-.footer {
+footer {
     padding-top: 4vh;    
     background-color: #F2F2F2;
 }

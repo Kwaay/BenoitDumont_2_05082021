@@ -28,7 +28,6 @@ a:link {
   }
   
   a:active {
-    color: auto;
     text-decoration: none;
     text-decoration-line: none;
   }
@@ -181,30 +180,32 @@ a:link {
 }
 .hebergement-container {
     padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
     border-radius: 30px;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
 }
 .hebergement-container a {
-    padding-top: 3vh;
-    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    font-size: large;
+}
+.hebergement-container h2 {
+    padding-left: 60px;
 }
 .card-hebergement-container {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .card-hebergement-container img {
     width: 245px;
     height: 125px;
     object-fit: cover;
-    flex-direction: column;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -225,46 +226,43 @@ a:link {
     border-radius: 30px;
     padding: 3px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    margin-top: 30px;
+}
+.more {
+    font-weight: bold;
 }
 
 /* ------------------------------------*/
+
 #populaire {
-    margin-right: 2vh;
     width: 100%;
     max-width: 400px;
-
-}
-.populaire-container {
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-right: 20px;
+    padding: 30px 40px 30px 40px;
     border-radius: 30px;
     background-color: #F2F2F2;
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    justify-content: stretch;
     flex-direction: column;
-    width: 100%;
 }
-.populaire-container img {
+#populaire img {
     width: 140px;
     height: 140px;
     object-fit: cover;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.populaire-container h2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
+.icon {
+    padding-left: 120px;
 }
 .card-populaire-container {
     display: flex;
     width: fit-content;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: 2vh;
     margin-right: 2vh;
+    height: 100%;
 }
 .card-populaire-1 {
     display: flex;
@@ -455,7 +453,7 @@ a:link {
 }
 
 /* ------------------------------------*/
-@media screen and (min-width: 100px) and (max-width: 900px) {
+@media screen and (min-width: 100px) and (max-width: 950px) {
 
     .header-container {
         display: block;
@@ -485,6 +483,7 @@ a:link {
     }
     .buttons {
         padding-top: 0;
+        display: flex;
     }
     #search {
         padding-top: 40px;
@@ -521,6 +520,7 @@ a:link {
     }
     #hebergement-all {
         flex-direction: column-reverse;
+        align-items: stretch;
     }
     #hebergement {
         display: block;
@@ -553,12 +553,13 @@ a:link {
     #populaire {
         margin-left: 2vh;
         padding-bottom: 2vh;
-        width: 100%;
-        max-width: none;
+        max-width: initial;
+        width: initial;
         margin-left: 50px;
         margin-right: 50px;
         margin-left: 0;
-        margin-right: 0;    
+        margin-right: 0;
+        align-items: center;    
     }
     .populaire-container {
         padding: 2vh;
@@ -568,10 +569,10 @@ a:link {
         background-color: #FAFAFA;
         border-radius: 0;
     }
-    .populaire-container h2 {
+    #populaire h2 {
         justify-content: space-between;
     }
-    .populaire-container i {
+    #populaire i {
         padding-left: 1vh;
     }
     .card-populaire-container {
@@ -677,9 +678,7 @@ a:link {
         grid-row: 6/7;
     }
 }
-@media screen and (min-width: 280px) and (max-width: 500px) {
 
-}
 @media screen and (min-width: 280px) and (max-width: 450px) {
     .form-search {
         margin-left: 0;
@@ -688,9 +687,21 @@ a:link {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .populaire-container h2 {
+        flex-direction: column;
+    }
+    .populaire-container i {
+        padding-top: 1vh;
+    }
     .card-populaire-1 {
         width: fit-content;
         max-width: 330px;
+    }
+    #populaire img {
+        height: initial;
+    }
+    #populaire i {
+        padding-left: 0;
     }
     .card-populaire-2 {
         width:initial;
@@ -706,6 +717,14 @@ a:link {
     .card-populaires-infos i {
         padding-left: 0;
     }
+    .hebergement-container h2 {
+        margin-left: 25px;
+        padding-left: 0;
+    }
+    .hebergement-container a {
+        margin-left: 25px;
+        
+    }
     .card-hebergement-container {
         padding-left: 0;
         padding-right: 0;
@@ -714,6 +733,13 @@ a:link {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .activites {
+        margin-left: 0;
+    }
+    .icon {
+        margin-left: 40px;
+    }
+    
 }
 @media screen and (max-width: 370px) {
     .header-container img {
@@ -734,6 +760,7 @@ a:link {
     }
     .filters i {
         margin-right: 5px;
+        padding: 1.2vh;
     }
     .form-search input {
         width: auto;

@@ -59,6 +59,9 @@ header {
 .primary-link {
     margin-right: 60px;
 }
+.active {
+    padding-top: 49px;
+}
 .active:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;

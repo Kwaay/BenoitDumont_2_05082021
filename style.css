@@ -71,7 +71,6 @@ header {
     color: #0065FC!important;
 }
 
-/* Position pour le bouton "S'inscrire" top = distance entre le haut et le bouton et right = distance du mur droit */
 /* ----------------------------------------- */
 #search {
     max-width: 1440px;
@@ -84,11 +83,14 @@ header {
     margin-left: 2vh;
 }
 .information i {
-    padding: 1vh;
     border: 1px solid #DEEBFF;
     border-radius: 40px;
     color: #0065FC;
     margin-right: 2vh;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    line-height: 36px;
 }
 .geo {
     border-top-left-radius:20px;
@@ -144,11 +146,10 @@ header {
     margin-left: 2vh;
     width: 100%;
     flex-wrap: wrap;
+    
 }
 .filters p:hover {
     border: 1px solid #0065FC;
-    border-radius: 30px;
-    transition: all 450ms;
     transform: scale(1.05);
 }
 .filters p {
@@ -157,14 +158,18 @@ header {
     font-weight: bold;
     padding-right: 2vh;
     font-size: large;
+    transition: border 450ms ease-in-out, transform 450ms ease-in-out ;
 
 }
 .filters i {
     background-color: #DEEBFF;
     border-radius: 30px;
-    padding: 1.5vh;
     color: #0065FC;
     margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
 }
 
 
@@ -195,7 +200,7 @@ header {
     font-size: large;
 }
 .hebergement-container h2 {
-    padding-left: 60px;
+    padding-left: 40px;
 }
 .card-hebergement-container {
     display: inline-flex;
@@ -209,8 +214,6 @@ header {
     width: 245px;
     height: 125px;
     object-fit: cover;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
 .card-hebergement-container i {
     color: #0065FC;
@@ -227,9 +230,10 @@ header {
 .card-hebergement-1, .card-hebergement-2, .card-hebergement-3, .card-hebergement-4, .card-hebergement-5, .card-hebergement-6 {
     background-color: white;
     border-radius: 30px;
-    padding: 3px;
+    border: 4px solid transparent;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
     margin-top: 30px;
+    overflow: hidden;
 }
 .more {
     font-weight: bold;
@@ -252,11 +256,9 @@ header {
     width: 140px;
     height: 140px;
     object-fit: cover;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
 }
 .icon {
-    padding-left: 120px;
+    padding-left: 110px;
 }
 .card-populaire-container {
     display: flex;
@@ -270,33 +272,33 @@ header {
 .card-populaire-1 {
     display: flex;
     background-color: white;
-    padding: 3px;
-    border: 1px solid transparent;
+    border: 4px solid transparent;
     border-radius: 30px;
     object-fit: cover;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    overflow: hidden;
 }
 .card-populaire-2 {
     display: flex;
     background-color: white;
-    padding: 3px;
-    border: 1px solid transparent;
+    border: 4px solid transparent;
     border-radius: 30px;
     object-fit: cover;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    overflow: hidden;
 }
 
 .card-populaire-3 {
     display: flex;
     background-color: white;
-    padding: 3px;
-    border: 1px solid transparent;
+    border: 4px solid transparent;
     border-radius: 30px;
     object-fit: cover;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    overflow: hidden;
 }
 
 .card-populaire-3 img {

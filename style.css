@@ -412,7 +412,6 @@ footer {
     padding-bottom: 4vh;
     margin: 0 auto;
     max-width: 1440px;
-    margin-left: 22vh;
 }
 .footer-container a {
     padding: 1vh;
@@ -426,18 +425,17 @@ footer {
     flex-direction: column;
 }
 .NosHebergements {
-    margin-left: -10vh;
     display: inline-flex;
     flex-direction: column;
 }
 .Assistance {
     display: inline-flex;
     flex-direction: column;
-    margin-right: 40vh;
+    margin-right: 20vh;
 }
 
 /* ------------------------------------*/
-@media screen and (min-width: 100px) and (max-width: 950px) {
+@media screen and (min-width: 100px) and (max-width: 1050px) {
     .header-container {
         display: block;
         width: 100%;
@@ -464,7 +462,7 @@ footer {
     .secondary-link {
         position: absolute;
         top: 50px;
-        right: 65px;
+        right: 40px;
         color: #0065FC;
     }
     .buttons {
@@ -582,9 +580,6 @@ footer {
     .activites-container {
         margin-right: 0;
     }
-    .activites-container h3 {
-        margin-left: -20px;
-    }
     .card-activites-container {
         display: grid;
         gap: 40px;
@@ -666,7 +661,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 280px) and (max-width: 450px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
     .form-search {
         margin-left: 0;
     }
@@ -724,16 +719,13 @@ footer {
         margin-left: 0;
     }
     .icon {
-        margin-left: 40px;
+        margin-left: 20px;
     }
     
 }
 @media screen and (max-width: 370px) {
     .header-container img {
         padding-left: 2vh;
-    }
-    .card-hebergement-container img {
-        width: 100%;
     }
     .card-populaire-container img {
         height: auto;
@@ -747,10 +739,15 @@ footer {
     }
     .filters i {
         margin-right: 5px;
-        padding: 1.2vh;
     }
     .form-search input {
-        width: auto;
+        width: 50%;
         min-width: 100px;
     }
+}
+@media screen and (max-width: 400px ) {
+    .card-hebergement-container img {
+        width: 245px;
+    }
+    
 }

@@ -249,7 +249,6 @@ header {
 }
 #populaire img {
     width: 140px;
-    height: 140px;
     object-fit: cover;
     aspect-ratio: 16 / 9;
 }
@@ -705,8 +704,15 @@ footer {
     .activites {
         margin-left: 0;
     }
+    .card-populaires-infos {
+        padding: 0px 0px 0px 10px;
+    }
+    .card-populaires-infos h3 {
+        margin: 5px 0px;
+        font-size: medium;
+    }
     .icon {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
 }

@@ -555,7 +555,7 @@ footer {
     #populaire h2 {
         justify-content: space-between;
     }
-    #populaire i {
+    .icon i {
         padding-left: 1vh;
     }
     .card-populaire-container {

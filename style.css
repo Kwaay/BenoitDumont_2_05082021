@@ -72,7 +72,7 @@ header {
     max-width: 1440px;
     margin: 0 auto;
 }
-.search-container h2 {
+.search-container h1 {
     margin-left: 2vh;
 }
 .search-container p {
@@ -217,7 +217,6 @@ header {
 .card-hebergement-infos h3, .card-hebergement-infos p {
     font-size: medium;
     margin: 5px;
-    padding-left: 1vh;
 }
 .card-hebergement-infos i {
     font-size: small;
@@ -252,6 +251,7 @@ header {
     width: 140px;
     height: 140px;
     object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 .icon {
     padding-left: 110px;
@@ -279,7 +279,7 @@ header {
     width: 140px;
 }
 .card-populaires-infos {
-    padding-left: 20px;
+    padding: 0px 20px 0px 20px;
 }
 .card-populaires-infos i {
     color: #0065FC;
@@ -677,22 +677,11 @@ footer {
         width: fit-content;
         max-width: 330px;
     }
-    #populaire img {
-        height: initial;
-    }
     #populaire i {
         padding-left: 0;
     }
-    .card-populaire {
-        width:initial;
-        max-width: 330px;
-    }
-    .card-populaire {
-        width: fit-content;
-        max-width: 330px;
-    }
-    .card-populaires-infos {
-        padding-right: 20px;
+    .width {
+        height: 140px;
     }
     .card-populaires-infos i {
         padding-left: 0;
